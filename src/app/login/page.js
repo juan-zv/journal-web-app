@@ -1,12 +1,12 @@
 "use client";
 
-import HomeClient from "./HomeClient";
 import { useSession, signIn, signOut } from "next-auth/react";
 
 export default function Login() {
   return (
     <div>
-      <HomeClient></HomeClient>
+      <h1>Login</h1>
+      <button onClick={() => signIn("tiktok")}>Sign in with TikTok</button>
     </div>
   );
 }
